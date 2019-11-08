@@ -1,4 +1,16 @@
-# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+# Build output/
+.cache/
+public/static
+
+# Dependencies
+node_modules/
+
+# misc
+.DS_Store
+*.log*
+/.env
+package-lock.json
+
 
 # dependencies
 /node_modules
