@@ -1,22 +1,21 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css?family=Rubik:400,700&display=swap");
+
+:root {
+  --primary-color: #18c1ee;
+  --accent-color: #fe0;
+  --white: white;
+  --black: black;
+  --light-grey: #f5f5f5;
+  --medium-grey: #cccccc;
+  --main-font: "Rubik", sans-serif;
+  --regular: 400;
+  --bold: 700;
+  --p-text: 1.2rem;
+  --p-titles: 1.5rem;
+  --very-big: 8rem;
 }
 
-.App-logo {
-  height: 40vmin;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #09d3ac;
+body {
+  font-family: var(--main-font);
+  background-color: var(--white);
 }
