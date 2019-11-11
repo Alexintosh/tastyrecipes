@@ -54,6 +54,7 @@ const Input = styled.input`
   }
   @media (max-width: 680px) {
     flex-grow: 1;
+    margin-right: 0;
   }
 `;
 
@@ -82,12 +83,14 @@ const NavButton = styled.button`
   }
 
   @media (max-width: 720px) {
+    width: 100%;
     flex-grow: 1;
   }
 
   @media (max-width: 560px) {
     flex-grow: 1;
     margin-top: 20px;
+    margin-right: 0;
   }
 `;
 
