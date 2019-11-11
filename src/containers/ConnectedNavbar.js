@@ -3,7 +3,6 @@ import "../App.css";
 import styled from "styled-components";
 
 const Container = styled.div`
-
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -18,7 +17,6 @@ const Container = styled.div`
     justify-content: center;
     width: 100%;
     height: 100px;
-
   }
 `;
 
@@ -32,7 +30,13 @@ const Balance = styled.span`
   padding: 10px;
 
   @media (max-width: 680px) {
-    margin: 0;
+    margin: 7% 0 0 0;
+  }
+`;
+
+const Label = styled.span`
+  @media (max-width: 680px) {
+    display: none;
   }
 `;
 
@@ -50,16 +54,22 @@ const Address = styled.span`
   background: var(--black);
 
   @media (max-width: 680px) {
-    margin: 0;
+    width: 80%;
+    padding: 5% 6% 10% 6%;
+    margin: 0 4% 2% 4%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
 `;
-
 
 function ConnectedNavbar(props) {
   return (
     <Container>
       <Balance href="#">Balance: {props.balance}</Balance>
-      <Address>Address: {props.address}</Address>
+      <Address>
+        <Label>Address</Label> {props.address}
+      </Address>
     </Container>
   );
 }
