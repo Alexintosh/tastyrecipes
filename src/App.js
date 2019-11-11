@@ -6,7 +6,7 @@ import Hero from "./components/Hero";
 import Recipe from "./components/Recipe";
 import How from "./components/How";
 import Newsletter from "./components/Newsletter";
-import Recipes from "./containers/Recipes";
+import RecipesContainer from "./containers/RecipesContainer";
 
 function App() {
   return (
@@ -15,7 +15,7 @@ function App() {
       <Navbar />
       <Hero />
       <How />
-      <Recipes />
+      <RecipesContainer />
       <Newsletter />
       {/* <Recipe /> */}
     </div>
