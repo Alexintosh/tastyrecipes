@@ -6,22 +6,22 @@ const Container = styled.div`
   display: flex;
   flex-direction: row;
   align-items: center;
-  width: 96%;
+  width: 92%;
   background-color: var(--white);
   color: var(--white);
-  padding: 10% 2% 2% 2%;
+  padding: 4%;
+  margin-top: 20px;
 
   @media (max-width: 768px) {
     flex-direction: column-reverse;
     justify-content: center;
-    padding: 20% 20px 10% 20px;
-  }
+    padding: 4%;
+  margin-top: 20px;  }
 `;
 
 
 const Text = styled.div`
-margin: -30px 20px 0px 16px;
-z-index: 99;
+margin: 20px;
 
   @media (max-width: 768px) {
   }

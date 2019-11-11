@@ -5,8 +5,8 @@ const UberContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 96%;
-  margin-top: 150px;
+  width: 100%;
+  margin-top: 10px;
 
   @media (max-width: 768px) {
   }
@@ -15,32 +15,36 @@ const UberContainer = styled.div`
 const Container = styled.div`
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
   align-items: center;
-  width: 96%;
+  width: 92%;
   background-color: var(--white);
   color: var(--white);
-  padding: 2%;
+  padding: 4%;
+  margin-top: 20px;
 
   @media (max-width: 768px) {
     flex-direction: column-reverse;
     justify-content: center;
-    padding: 20% 0 10% 20px;
-  }
+    padding: 4%;
+  margin-top: 20px;  }
 `;
 
-const PageTitle = styled.h1`
-  font-weight: 700;
-  font-size: 3.2rem;
-  line-height: 3.2rem;
-  color: var(--black);
-  margin: -20px 0px 0px 50px;
+
+const PageTitle = styled.div`
+margin: 20px;
+
 
   @media (max-width: 768px) {
   }
 `;
 
 const PageTitleHighlight = styled.span`
+
+font-weight: 700;
+  font-size: 3.2rem;
+  line-height: 3.2rem;
+  color: var(--black);
+  margin: 20px 0px 0px 50px;
   background: #fe0;
   -webkit-box-shadow: 1rem 0 0 #fe0, -1rem 0 0 #fe0;
   box-shadow: 1rem 0 0 #fe0, -1rem 0 0 #fe0;
@@ -50,9 +54,9 @@ const PageTitleHighlight = styled.span`
 `;
 
 const Text = styled.div`
+  min-width: 50%;
   display: flex;
   flex-direction: column;
-  align-items: stretch;
   margin: 0 16px;
 
   @media (max-width: 768px) {
@@ -72,7 +76,7 @@ const Higlight = styled.span`
 const Step = styled.span`
   font-weight: var(--regular);
   font-size: 1.6rem;
-  line-height: 2.2rem;
+  line-height: 2.5rem;
   color: var(--black);
 
   @media (max-width: 768px) {
@@ -84,18 +88,18 @@ const Image = styled.div`
   background-image: url("../img/recipe5.jpg");
   background-size: cover;
   min-height: 400px;
-  min-width: 50%;
-  max-width: 600px;
+  min-width: 40%;
+  max-width: 45%;
 
   @media (max-width: 768px) {
   }
 `;
 
 const Input = styled.input`
-  width: 100%;
   border: solid 1px var(--black);
   border-radius: 0.4rem;
   padding: 20px;
+  margin-top: 20px;
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
   box-shadow: none;
@@ -136,6 +140,7 @@ const Button = styled.button`
   border: none;
   border-radius: 0.2rem;
   background: var(--primary-color);
+  margin-top: 20px;
 
   :hover {
     transition-property: background color;

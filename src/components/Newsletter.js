@@ -53,7 +53,6 @@ const Input = styled.input`
        color:transparent;
   }
   @media (max-width: 680px) {
-    margin-top: 20px;
     flex-grow: 1;
   }
 `;

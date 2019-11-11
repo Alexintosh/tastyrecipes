@@ -1,10 +1,23 @@
 import React from "react";
 import "../App.css";
 import styled from "styled-components";
+import ConnectedNavbar from "./ConnectedNavbar";
 
-const Container = styled.div`
+const UberContainer = styled.div`
   position: fixed;
   top: 0;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 160px;
+
+  @media (max-width: 768px) {
+    width: 100%;
+    height: 180px;
+  }
+`;
+
+const Container = styled.div`
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -64,12 +77,15 @@ const NavButton = styled.button`
 
 function Navbar() {
   return (
+    <UberContainer>
     <Container>
       <MenuItem href="#">Ddai</MenuItem>
       <MenuItem href="#">Dexwallet</MenuItem>
       <MenuItem href="#">Contact Us</MenuItem>
       <NavButton>Start Cooking</NavButton>
     </Container>
+    <ConnectedNavbar balance='238.474.432,00' address='0xc96265c36F6D77747f9c259946a1eF55FcE946b7'/>
+    </UberContainer>
   );
 }
 
