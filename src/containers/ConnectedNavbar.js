@@ -56,9 +56,11 @@ const Address = styled.span`
   @media (max-width: 680px) {
     width: 86%;
     margin: 3% 0;
+    padding: 20px 10px;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+    
   }
 `;
 
