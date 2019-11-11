@@ -7,6 +7,10 @@ const Container = styled.div`
   top: 20px;
   left: 20px;
   z-index: 9997;
+
+  @media (max-width: 680px) {
+    height: 60px;
+  }
 `;
 
 function Logo() {
