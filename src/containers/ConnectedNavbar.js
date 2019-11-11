@@ -6,31 +6,28 @@ const Container = styled.div`
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  width: 100%;
-  height: 80px;
+  height: 100px;
   background-color: var(--light-grey);
   color: var(--black);
   z-index: 9998;
 
   @media (max-width: 768px) {
     flex-direction: column;
-    justify-content: center;
-    width: 100%;
-    height: 160px;
+    justify-content: space-around;
   }
 `;
 
 const Balance = styled.span`
   display: block;
-  margin-right: 2%;
+  margin-right: 20px;
   font-size: var(--small-text);
   font-weight: var(--regular);
   color: var(--black);
   text-decoration: none;
-  padding: 10px;
 
   @media (max-width: 680px) {
-    margin: 7% 0 0 0;
+    margin-right: 0;
+    height: 1px;
   }
 `;
 
@@ -48,18 +45,19 @@ const Address = styled.span`
   font-weight: var(--regular);
   color: var(--white);
   text-decoration: none;
-  padding: 10px;
+  padding: 1% 3%;
   border: none;
   border-radius: 0.2rem;
   background: var(--black);
 
   @media (max-width: 680px) {
-    width: 86%;
-    margin: 3% 0;
-    padding: 20px 10px;
+    margin-right: 0;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+    width: 80%;
+    padding: 2% 5%;
+
     
   }
 `;
