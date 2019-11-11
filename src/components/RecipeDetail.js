@@ -6,9 +6,10 @@ const UberContainer = styled.div`
   flex-direction: column;
   align-items: center;
   width: 100%;
-  margin-top: 10px;
+  margin-top: 200px;
 
   @media (max-width: 768px) {
+    margin-top: 200px;
   }
 `;
 
@@ -50,6 +51,8 @@ font-weight: 700;
   box-shadow: 1rem 0 0 #fe0, -1rem 0 0 #fe0;
 
   @media (max-width: 768px) {
+    font-size: var(--very-big-mobile);
+    line-height: var(--very-big-mobile);
   }
 `;
 
@@ -92,6 +95,8 @@ const Image = styled.div`
   max-width: 45%;
 
   @media (max-width: 768px) {
+    min-width: 100%;
+    height: 340px;
   }
 `;
 

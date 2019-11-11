@@ -36,6 +36,8 @@ const Higlight = styled.span`
   box-shadow: 1rem 0 0 #fe0, -1rem 0 0 #fe0;
 
   @media (max-width: 768px) {
+    font-size: var(--very-big-mobile);
+    line-height: var(--very-big-mobile);
   }
 `;
 

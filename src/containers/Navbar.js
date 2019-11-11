@@ -9,11 +9,10 @@ const UberContainer = styled.div`
   display: flex;
   flex-direction: column;
   width: 100%;
-  height: 160px;
+  height: 180px;
 
   @media (max-width: 768px) {
     width: 100%;
-    height: 180px;
   }
 `;
 

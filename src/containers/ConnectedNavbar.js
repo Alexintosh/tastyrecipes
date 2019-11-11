@@ -16,7 +16,7 @@ const Container = styled.div`
     flex-direction: column;
     justify-content: center;
     width: 100%;
-    height: 100px;
+    height: 160px;
   }
 `;
 
@@ -54,9 +54,8 @@ const Address = styled.span`
   background: var(--black);
 
   @media (max-width: 680px) {
-    width: 80%;
-    padding: 5% 6% 10% 6%;
-    margin: 0 4% 2% 4%;
+    width: 86%;
+    margin: 3% 0;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
