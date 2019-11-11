@@ -2,22 +2,20 @@ import React from "react";
 import "./App.css";
 import Navbar from "./containers/Navbar";
 import Logo from "./components/Logo";
-import Hero from "./components/Hero";
-import How from "./components/How";
 import Newsletter from "./components/Newsletter";
 import RecipesContainer from "./containers/RecipesContainer";
+import RecipeDetail from "./components/RecipeDetail";
 
-function App() {
+function YourRecipe() {
   return (
     <div>
       <Logo />
       <Navbar />
-      <Hero />
-      <How />
+      <RecipeDetail />
       <RecipesContainer />
       <Newsletter />
     </div>
   );
 }
 
-export default App;
+export default YourRecipe;

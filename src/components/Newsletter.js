@@ -23,7 +23,6 @@ const Title = styled.div`
   font-size: var(--p-titles);
   background-color: var(--accent-color);
 
-
   @media (max-width: 680px) {
     flex-grow: 1;
     margin-top: 20px;
@@ -31,7 +30,7 @@ const Title = styled.div`
 `;
 
 const Input = styled.input`
-min-width: 200px;
+  min-width: 200px;
   border: solid 1px var(--black);
   border-radius: 0.4rem;
   padding: 20px;
@@ -47,11 +46,14 @@ min-width: 200px;
 
   :focus {
     outline: none !important;
-    border:1px solid var(--primary-color);
+    border: 1px solid var(--primary-color);
     box-shadow: 0 0 10px var(--primary-color);
-}
-@media (max-width: 680px) {
-  margin-top: 20px;
+  }
+  :focus::placeholder{
+       color:transparent;
+  }
+  @media (max-width: 680px) {
+    margin-top: 20px;
     flex-grow: 1;
   }
 `;
@@ -89,7 +91,6 @@ const NavButton = styled.button`
     margin-top: 20px;
   }
 `;
-
 
 function Newsletter() {
   return (

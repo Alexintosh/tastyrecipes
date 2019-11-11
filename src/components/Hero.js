@@ -59,7 +59,7 @@ function Hero2() {
           Put some salty sprinkles on your Crypto. We'll do the rest.
           </Higlight>
         </Text>
-      <Image></Image>
+      <Image />
     </Container>
   );
 }
