@@ -15,7 +15,9 @@ const Container = styled.a`
   text-decoration: none;
 
   @media (max-width: 768px) {
-    width: 100%;
+    min-width: 100%;
+    min-height: 260px;
+    margin: 10px 0;
   }
 `;
 

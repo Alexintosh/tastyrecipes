@@ -3,12 +3,15 @@ import styled from "styled-components";
 
 const Container = styled.div`
 background-color: var(--white);
-padding: 40px;
 font-size: var(--p-text);
-line-height: 2rem;
+line-height: 1.8rem;
+margin-top: 20px;
+margin-left: 20px;
+margin-right: 20px;
 
 @media (max-width: 680px) {
-    padding: 20px;
+  margin-left: 0;
+margin-right: 0;
   }
 `;
 

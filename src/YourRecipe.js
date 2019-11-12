@@ -11,21 +11,26 @@ const Container = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  /* margin-top: 150px; */
   width: 100%;
 
   @media (max-width: 768px) {
+  width: 90%;
+  padding: 0 5%;
   }
 `;
 
 function YourRecipe() {
   return (
+    <div>
+    <Logo />
+    <Navbar />
     <Container>
-      <Logo />
-      <Navbar />
       <RecipeDetail />
       <RecipesContainer />
       <Newsletter />
-      </Container>
+    </Container>
+    </div>
   );
 }
 

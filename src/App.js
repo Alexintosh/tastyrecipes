@@ -12,23 +12,27 @@ const Container = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 100%;
   margin-top: 150px;
+  width: 100%;
 
   @media (max-width: 768px) {
+  width: 90%;
+  padding: 0 5%;
   }
 `;
 
 function App() {
   return (
+    <div>
+    <Logo />
+    <Navbar />
     <Container>
-      <Logo />
-      <Navbar />
       <Hero />
       <How />
       <RecipesContainer />
       <Newsletter />
     </Container>
+    </div>
   );
 }
 

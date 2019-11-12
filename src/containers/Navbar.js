@@ -8,11 +8,10 @@ const UberContainer = styled.div`
   top: 0;
   display: flex;
   flex-direction: column;
-  width: 100%;
   height: 180px;
+  width: 100%;
 
   @media (max-width: 768px) {
-    width: 100%;
   }
 `;
 
@@ -20,7 +19,6 @@ const Container = styled.div`
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  width: 100%;
   height: 80px;
   background-color: var(--primary-color);
   color: var(--white);

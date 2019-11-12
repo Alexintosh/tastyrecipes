@@ -5,7 +5,6 @@ const UberContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 100%;
   margin-top: 200px;
 
   @media (max-width: 768px) {
@@ -17,42 +16,48 @@ const Container = styled.div`
   display: flex;
   flex-direction: row;
   align-items: center;
-  width: 92%;
+  justify-content: space-between;
   background-color: var(--white);
   color: var(--white);
-  padding: 4%;
-  margin-top: 20px;
+  margin-top: 50px;
+  margin-right: 2%;
+  margin-left: 2%;
+  width: 96%;
 
   @media (max-width: 768px) {
     flex-direction: column-reverse;
-    justify-content: center;
-    padding: 4%;
-  margin-top: 20px;  }
+    justify-content: flex-start;
+    margin-top: 20px;
+    margin-right: 0;
+    margin-left: 0;
+  }
 `;
 
-
 const PageTitle = styled.div`
-margin: 20px;
-
-
+margin-top: 20px;
+margin-right: 2%;
+  margin-left: 2%;
+  width: 96%;
   @media (max-width: 768px) {
+    margin-top: 0;
+    margin-bottom: 0;
   }
 `;
 
 const PageTitleHighlight = styled.span`
-
-font-weight: 700;
+  font-weight: 700;
   font-size: 3.2rem;
   line-height: 3.2rem;
   color: var(--black);
-  margin: 20px 0px 0px 50px;
   background: #fe0;
-  -webkit-box-shadow: 1rem 0 0 #fe0, -1rem 0 0 #fe0;
-  box-shadow: 1rem 0 0 #fe0, -1rem 0 0 #fe0;
+  /* -webkit-box-shadow: 1rem 0 0 #fe0, -1rem 0 0 #fe0;
+  box-shadow: 1rem 0 0 #fe0, -1rem 0 0 #fe0; */
 
   @media (max-width: 768px) {
     font-size: var(--very-big-mobile);
-    line-height: var(--very-big-mobile);
+    line-height: 3rem;
+    margin-top: 20px;
+    margin-bottom: 20px;
   }
 `;
 
@@ -60,9 +65,14 @@ const Text = styled.div`
   min-width: 50%;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   margin: 0 16px;
 
   @media (max-width: 768px) {
+    width: 100%;
+    margin-left: 20px;
+    margin-right: 20px;
   }
 `;
 
@@ -73,6 +83,7 @@ const Higlight = styled.span`
   color: var(--black);
 
   @media (max-width: 768px) {
+    line-height: 2rem;
   }
 `;
 
@@ -88,26 +99,28 @@ const Step = styled.span`
 
 const Image = styled.div`
   background-color: #ccc;
-  background-image: url("../img/recipe5.jpg");
+  background-image: url("../img/cupcake.jpg");
   background-size: cover;
   min-height: 400px;
   min-width: 40%;
-  max-width: 45%;
+  max-width: 40%;
 
   @media (max-width: 768px) {
     min-width: 100%;
-    height: 340px;
+    min-width: 100%;
+    margin-top:0;
   }
 `;
 
 const Input = styled.input`
   border: solid 1px var(--black);
   border-radius: 0.4rem;
-  padding: 20px;
+  padding: 4% 6%;
   margin-top: 20px;
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
   box-shadow: none;
+  width: 88%;
 
   ::-webkit-inner-spin-button,
   ::-webkit-outer-spin-button {
@@ -129,7 +142,13 @@ const Input = styled.input`
   }
   @media (max-width: 680px) {
     margin-top: 20px;
-    flex-grow: 1;
+    margin-left: 20px;
+    margin-right: 20px;
+    width: 88%;
+    padding: 6% 6%;
+
+    flex-grow:1;
+  
   }
 `;
 
@@ -158,11 +177,15 @@ const Button = styled.button`
   }
 
   @media (max-width: 720px) {
-    flex-grow: 1;
+    width: 100%;
+    flex-grow:1;
+    margin-left: 20px;
+    margin-right: 20px;
   }
 
   @media (max-width: 560px) {
-    flex-grow: 1;
+    width: 100%;
+    flex-grow:1;
     margin-top: 20px;
   }
 `;
@@ -178,10 +201,10 @@ function RecipeDetail() {
       <Container>
         <Text>
           <Higlight>This is how it works:</Higlight>
-          <Step>🥫 1. Do ↪️ this and ↔️ that</Step>
-          <Step>🦐 2. Do ↗️ this and ↪️ that</Step>
-          <Step>🥒 3. Do ↔️ this ↗️ and that</Step>
-          <Step>🍜 4. Do this ↔️ and ↗️ that</Step>
+          <Step>🥫 1. Do ↪️ this and ↔️ that and then</Step>
+          <Step>🦐 2. Do ↗️ this and ↪️ that and then</Step>
+          <Step>🥒 3. Do ↔️ this ↗️ and that and then</Step>
+          <Step>🍜 4. Do this ↔️ and ↗️ that and that's it</Step>
           <Input type="number" name="amount" placeholder="Inert Amount"></Input>
           <Button>Send</Button>
         </Text>
